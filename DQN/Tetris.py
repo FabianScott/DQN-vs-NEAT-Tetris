@@ -120,16 +120,16 @@ class Piece:
         self.color = self.shape_colors[self.tetromino]
 
 
-class Tetris():
+class Tetris:
     """
-    Tetris class acting as enviroment.
+    Tetris class acting as environment.
     The game data is represented using a 2d numpy array representing the board,
     and piece objects. The board is extended out of view for easy collision
-    detection. Occationally sub arrays called grids representing the visual
+    detection. Occasionally sub arrays called grids representing the visual
     part of the board are constructed.
     """
 
-    # Colors and constant dimenstions
+    # Colors and constant dimensions
     black = (34, 34, 34)
     grey = (184, 184, 184)
     screen_size = 600
@@ -359,7 +359,7 @@ class Tetris():
                 pygame.draw.rect(self.screen, self.piece.color, square)
 
         # Draw "Highscore"
-        score_label = self.TXT_FONT.render("Highscore", 1, (255, 255, 255))
+        score_label = self.TXT_FONT.render("Highscore pieces", 1, (255, 255, 255))
         self.screen.blit(score_label, (self.screen_size - score_label.get_width() - 40, 50))
 
         # Draw highscore
