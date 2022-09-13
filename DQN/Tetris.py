@@ -359,7 +359,7 @@ class Tetris:
                 pygame.draw.rect(self.screen, self.piece.color, square)
 
         # Draw "Highscore"
-        score_label = self.TXT_FONT.render("Highscore pieces", 1, (255, 255, 255))
+        score_label = self.TXT_FONT.render("Highscore pizeces", 1, (255, 255, 255))
         self.screen.blit(score_label, (self.screen_size - score_label.get_width() - 40, 50))
 
         # Draw highscore
