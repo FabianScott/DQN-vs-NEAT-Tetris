@@ -13,7 +13,7 @@ import numpy as np
 W = np.array([-12.63, 6.6, -9.22, -19.77, -13.08, -10.49, -1.61, -24.04])
 
 rendering = True
-fps = 15
+fps = 3
 
 env = Tetris(False, None, [], rendering)
 
